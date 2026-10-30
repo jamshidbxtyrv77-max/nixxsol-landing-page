@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header  */
+.header-service,
+.hero-title-2,
+.hero-container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    padding: 40px;
+}
+
+.header-service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-line {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 80px;
+}
+
+.header-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-family: Proxima Nova;
+    }
+}
+
+.header-btn {
+    border-radius: 20px;
+    padding: 20px 30px;
+    background-color: #E92129;
+    color: white;
+    cursor: pointer;
+    border: 2px solid #E92129;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-btn:hover {
+    background-color: #d27777;
+    color: rgb(6, 6, 6);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.header-list ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* header  */
+/* hero  */
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-title {
+    max-width: 450px;
+    font-size: 36px;
+    line-height: 1.2;
+    background: linear-gradient(310deg, #E92129, #242424);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-img {
+    width: 50%;
+}
+
+.hero-img img {
+    width: 100%;
+    display: block;
+}
+
+/* main 2 */
+
+/* Bo'limning tashqi o'rami: header va hero bilan bir xil chegarada */
+.about {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.about-left {
+    flex: 0 0 40%;
+}
+
+/* "About Company" sarlavhasi */
+.about-title {
+    max-width: 250px;
+    font-size: 40px;
+    line-height: 1.2;
+    color: #242424;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* O'ng ustun: qolgan joyni egallaydi */
+.about-right {
+    flex: 1;
+}
+
+/* Kichik sarlavha */
+.about-subtitle {
+    font-size: 20px;
+    line-height: 1.4;
+    color: #242424;
+    margin-bottom: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Asosiy matn */
+.about-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555555;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Uchta raqam rasmi uchun qator */
+.about-stats {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Har bir raqam rasmi */
+.about-stat {
+    height: 60px;
+    width: auto;
+}
+
+.services {
+    background-image: linear-gradient(100deg, #E4252C, #0d0d0d);
+    background-repeat: no-repeat;
+    background-size: 100% 220px;
+    background-position: top;
+    padding: 60px 20px 80px;
+}
+
+.services-inner {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+/* "Services" sarlavhasi: qizil va o'rtada */
+.services-title {
+    text-align: center;
+    color: #E92129;
+    font-size: 35px;
+    margin-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+/* Bitta card: oq quti, soya bilan */
+.services-card {
+    background: white;
+    border-radius: 8px;
+    padding: 24px 16px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Card ikonkasi */
+.services-card-icon {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 12px;
+}
+
+/* Card sarlavhasi */
+.services-card-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #242424;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Card matni */
+.services-card-text {
+    font-size: 13px;
+    line-height: 1.5;
+    /* qatorlar orasi */
+    color: #555555;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Bo'limning o'rami: chapda matn, o'ngda slayder */
+.portfolio,
+.testimonials {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+/* Chap ustun: kengligi qat'iy, siqilmaydi */
+.portfolio-info,
+.testimonials-info {
+    flex-shrink: 0;
+    width: 320px;
+}
+
+/* Sarlavha */
+.portfolio-title,
+.testimonials-title {
+    font-size: 40px;
+    color: #242424;
+    margin-bottom: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Sarlavha tagidagi matn */
+.portfolio-text,
+.testimonials-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555555;
+    margin-bottom: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Qizil tugma */
+.portfolio-btn,
+.testimonials-btn {
+    background-color: #E92129;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.portfolio-btn:hover,
+.testimonials-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* O'ng ustun: qolgan joyni egallaydi */
+.portfolio-right,
+.testimonials-right {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Slayder: cardlar yonma-yon, yon tomonga surish mumkin */
+.portfolio-slider,
+.testimonials-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    padding: 10px 0;
+}
+
+.portfolio-slider::-webkit-scrollbar,
+.testimonials-slider::-webkit-scrollbar {
+    display: none;
+}
+
+/* Strelkalar qatori: o'rtada turadi */
+.portfolio-arrows,
+.testimonials-arrows {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Dumaloq qizil strelka tugmasi */
+.portfolio-arrow,
+.testimonials-arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #E92129;
+    color: white;
+    font-size: 16px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+/* Bo'lim: konteyner cheklovi olib tashlandi, shuning uchun o'ng tomoni ekran chetigacha cho'ziladi */
+.portfolio {
+    max-width: none;
+    margin: 0;*/
+    padding: 80px 0 80px max(20px, calc((100% - 1320px) / 2 + 20px));
+}
+
+/* Rasm va uning ustidagi yozuv uchun o'ram */
+.portfolio-media {
+    position: relative;
+    /* ichidagi qizil yozuv shu o'ramga nisbatan joylashadi */
+}
+
+/* Katta rasm: ustun kengligini to'liq egallaydi, ya'ni ekran chetigacha */
+.portfolio-img {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: left;
+}
+
+/* Rasm ustidagi qizil yozuv: chap-pastki burchakda */
+.portfolio-card-label {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #E92129;
+    color: white;
+    padding: 12px 40px 12px 20px;
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* "Games" yozuvi */
+.portfolio-card-name {
+    display: block;
+    font-size: 18px;
+}
+
+/* "See all games" havolasi */
+.portfolio-card-link {
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/* Strelkalar: o'ng tomonga, konteyner chetiga tekislanadi */
+.portfolio-arrows {
+    justify-content: flex-end;
+    padding-right: max(20px, calc((100vw - 1320px) / 2 + 20px));
+}
+/* Qora fonli keng chiziq */
+.partners {
+    background-color: #000000;
+    padding: 50px 20px;
+}
+
+.partners-list {
+    max-width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Har bir logotip */
+.partners-logo {
+    height: 80px;
+    width: auto;
+}
+/* Bitta fikr kartasi: oq quti, soya bilan */
+.testimonials-card {
+    flex: 0 0 640px;
+    scroll-snap-align: start;
+    background-color: white;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+
+}
+
+/* Mijozning dumaloq rasmi */
+.testimonials-card-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+
+}
+
+/* Mijoz ismi: qizil */
+.testimonials-card-name {
+    color: #E92129;
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fikr matni */
+.testimonials-card-text {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #555555;
+    font-family: Arial, Helvetica, sans-serif;
+}
